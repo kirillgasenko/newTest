@@ -4,7 +4,7 @@ import { keyUrls } from './constants.js';
 
 const userIdDefault = {};
 
-export const getCashOutNatural = (
+const getCashOutNatural = (
   amount,
   response,
   value,

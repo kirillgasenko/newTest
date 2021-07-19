@@ -3,21 +3,24 @@ import { getCashOutJuridical } from './helpers/getCashOutJuridical.js';
 import { getCashIn } from './helpers/getCashIn.js';
 import { getCashOutNaturalDefault } from './helpers/getCashOutNaturalDefault.js';
 
+export const percent = {
+  natural: {
+    cash_out: getCashOutNaturalDefault,
+    cash_in: getCashIn,
+  },
+  juridical: {
+    cash_out: getCashOutJuridical,
+    cash_in: getCashIn,
+  },
+};
+
 export async function percentCalculate(data) {
   const response = await getAllResponses();
 
-  const percent = {
-    natural: {
-      cash_out: getCashOutNaturalDefault,
-      cash_in: getCashIn,
-    },
-    juridical: {
-      cash_out: getCashOutJuridical,
-      cash_in: getCashIn,
-    },
-  };
-
-  data.forEach((e) => percent[e.user_type][e.type](e.operation.amount, response, e.date, e.user_id));
-
-  return percent;
+  data.forEach((value) => percent[value.user_type][value.type](
+    value.operation.amount,
+    response,
+    value.date,
+    value.user_id,
+  ));
 }
