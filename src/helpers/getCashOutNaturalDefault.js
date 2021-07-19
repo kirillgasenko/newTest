@@ -1,6 +1,6 @@
 import moment from 'moment';
 import { getPercents } from './getPercents.js';
-import { keyUrls } from './constants.js';
+import { keyUrls } from '../constant/constants.js';
 
 const userIdDefault = {};
 

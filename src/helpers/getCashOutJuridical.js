@@ -1,4 +1,4 @@
-import { keyUrls } from './constants.js';
+import { keyUrls } from '../constant/constants.js';
 import { getPercents } from './getPercents.js';
 
 export const getCashOutJuridical = (value, response) => {

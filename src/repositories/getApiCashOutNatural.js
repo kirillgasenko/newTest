@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { API_CASH_OUT_NATURAL } from '../helpers/constants.js';
+import { API_CASH_OUT_NATURAL } from '../constant/constants.js';
 
 export async function getApiCashOutNatural() {
   const response = await axios.get(API_CASH_OUT_NATURAL);

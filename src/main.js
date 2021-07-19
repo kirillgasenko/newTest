@@ -3,7 +3,7 @@ import { getCashOutJuridical } from './helpers/getCashOutJuridical.js';
 import { getCashIn } from './helpers/getCashIn.js';
 import { getCashOutNaturalDefault } from './helpers/getCashOutNaturalDefault.js';
 
-export const percent = {
+const percent = {
   natural: {
     cash_out: getCashOutNaturalDefault,
     cash_in: getCashIn,

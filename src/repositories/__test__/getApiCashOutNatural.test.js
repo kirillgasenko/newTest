@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { getApiCashOutNatural } from '../../repositories/getApiCashOutNatural';
-import { API_CASH_OUT_NATURAL } from '../constants';
+import { getApiCashOutNatural } from '../getApiCashOutNatural';
+import { API_CASH_OUT_NATURAL } from '../../constant/constants.js';
 
 jest.mock('axios');
 

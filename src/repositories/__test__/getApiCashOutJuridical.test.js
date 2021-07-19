@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { getApiCashOutJuridical } from '../../repositories/getApiCashOutJuridical';
-import { API_CASH_OUT_JURIDICAL } from '../constants.js';
+import { getApiCashOutJuridical } from '../getApiCashOutJuridical';
+import { API_CASH_OUT_JURIDICAL } from '../../constant/constants.js';
 
 jest.mock('axios');
 

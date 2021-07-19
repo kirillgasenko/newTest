@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { getApiCashIn } from '../../repositories/getApiCashIn.js';
-import { API_CASH_IN } from '../constants.js';
+import { getApiCashIn } from '../getApiCashIn.js';
+import { API_CASH_IN } from '../../constant/constants.js';
 
 jest.mock('axios');
 
@@ -22,6 +22,6 @@ describe('getApiCashIn', () => {
     const ApiCashIn = await getApiCashIn();
 
     expect(axios.get).toHaveBeenCalledWith(API_CASH_IN);
-    await expect(ApiCashIn).toEqual(expectedResult);
+    expect(ApiCashIn).toEqual(expectedResult);
   });
 });
