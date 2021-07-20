@@ -1,3 +1,5 @@
+# You should write `npm install` in console for download packages.
+
 # Available commands
 
 ### `npm start input.json` - command for start
