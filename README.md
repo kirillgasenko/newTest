@@ -12,11 +12,10 @@
 ├── src
 │   ├── helpers
 │   │   ├── __test__
-│   │   │   ├── getApiCashIn.test.js
-│   │   │   ├── getApiCashOutJuridical.test.js
-│   │   │   ├── getApiCashOutNatural.test.js
+│   │   │   ├── getCashIn.test.js
 │   │   │   ├── getCashOutJuridical.test.js
 │   │   │   ├── getCashOutNaturalDefault.test.js
+│   │   │   ├── getDataFromFile.test.js
 │   │   │   ├── getDefaultCashIn.test.js
 │   │   │   └── getPercents.test.js
 │   │   ├── constant.js
@@ -26,10 +25,16 @@
 │   │   ├── gerDafaultCashIn.js
 │   │   └── getPercents.js
 │   ├── repositories
+│   │   ├── __test__
+│   │   │   ├── getApiCashIn.test.js
+│   │   │   ├── getApiCashOutJuridical.test.js
+│   │   │   └── getApiCashOutNatural.test.js
 │   │   ├── getApiCashIn.js
 │   │   ├── getCashOutJuridical.js
 │   │   └── getApiCashOutNatural.js
 │   ├── services
+│   │   ├── __test__
+│   │   │   └── getAllResponses.test.js
 │   │   └── getAllResponses,js
 |   └── main.js
 ├── index.js
